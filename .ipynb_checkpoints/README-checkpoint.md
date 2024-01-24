@@ -92,7 +92,7 @@ To run the project locally, follow these steps:
 - ...
 
 
-## Dasboard Design
+## Dashboard Design
 - ...
 
 
