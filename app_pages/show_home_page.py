@@ -4,7 +4,7 @@ def show_home_page():
     st.title("Welcome to the Cherry Leaf Mildew Detection App.")
 
     # Create a container with green success background
-    with st.beta_container():
+    with st.container():
         with st.spinner("Loading..."):  # Optional loading spinner
             st.success("This app is designed to help you analyze and predict whether cherry leaves are healthy or contain powdery mildew.")
             st.markdown("## How to Use")
