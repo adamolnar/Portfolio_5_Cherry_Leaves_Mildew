@@ -2,8 +2,18 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import pandas as pd
+import base64  # Import base64 module
 from src.data_management import download_dataframe_as_csv
 from src.machine_learning.predictive_analysis import resize_input_image, load_model_and_predict
+
+def download_dataframe_as_csv(dataframe):
+    # Create a stream to hold the data
+    csv = dataframe.to_csv(index=False)
+    b64 = base64.b64encode(csv.encode()).decode()  # Encode as base64
+
+    # Create a download link
+    href = f'<a href="data:file/csv;base64,{b64}" download="analysis_report.csv">Download CSV</a>'
+    return href
 
 def main():
     st.title("Mildew Detector")
@@ -18,7 +28,10 @@ def main():
         df_report = pd.DataFrame(columns=['Name', 'Result', 'Confidence'])
 
         for image in images_buffer:
-            st.subheader(f"Cherry Leaf: **{image.name}**")
+            st.markdown(
+                f'<h3 style="background-color: #333; color: white; padding: 8px; border-radius: 8px; margin-bottom:15px;">Cherry Leaf: <strong>{image.name}</strong></h3>',
+                unsafe_allow_html=True
+            )
             img_pil = Image.open(image)
             img_array = np.array(img_pil)
             col1, col2 = st.columns(2)
@@ -36,27 +49,26 @@ def main():
             # Ensure that pred_proba is within the valid range
             pred_proba = max(0.0, min(1.0, pred_proba))
 
-           
-            
             with col2:
-                st.subheader("Prediction")
-                st.metric(label="Class", value=pred_class)
+                st.markdown("<h3 style='background-color: grey; color: white; padding: 8px;'>Prediction</h3>", unsafe_allow_html=True)
+                st.metric(label="", value=pred_class)
 
                 # Displaying the prediction probability as a progress bar
-                st.write("Prediction Confidence:")
+                
                 st.progress(pred_proba)
 
                 # Displaying the prediction probability as a percentage
                 st.metric(label="Confidence", value=f"{pred_proba * 100:.2f}%")
+                
 
             # Adding the prediction result to the report dataframe
             new_row_df = pd.DataFrame({"Name": [image.name], 'Result': [pred_class], 'Confidence': [f"{pred_proba * 100:.2f}%"]})
             df_report = pd.concat([df_report, new_row_df], ignore_index=True)
+            st.markdown("---")
 
         if not df_report.empty:
             st.success("Analysis Report")
             st.dataframe(df_report)
-            # Uncomment the below line once you define or import the function `download_dataframe_as_csv`
             st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
 
 if __name__ == "__main__":

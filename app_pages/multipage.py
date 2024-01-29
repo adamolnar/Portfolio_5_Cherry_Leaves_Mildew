@@ -15,5 +15,5 @@ class MultiPage:
 
         # Display the selected page's title and content
         with st.container():
-            st.subheader(selected_page['title'])
+           
             selected_page['function']()
