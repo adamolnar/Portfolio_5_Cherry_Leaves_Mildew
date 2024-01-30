@@ -38,7 +38,7 @@ The project addresses the following business requirements:
 
 The dataset for the Mildew Detection in Cherry Leaves project consists of a collection of cherry leaf images, each labeled to indicate whether the leaf is healthy or affected by powdery mildew. Here are the key details regarding the dataset:
 
-- **Number of Samples**: [Specify the total number of images in the dataset.]
+- **Number of Samples**: The dataset comprises 4,208 curated photographs featuring individual cherry leaves set against a neutral backdrop. 
 
 - **Data Format**: The images are typically in common image formats such as JPEG or PNG.
 
@@ -48,19 +48,24 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 
 - **Data Variability**: The dataset includes images of cherry leaves with varying degrees of powdery mildew infection. This variability is essential for training a robust model.
 
-- **Data Collection**: The images were collected and labeled by [mention the source or organization responsible for data collection] under an [optional] non-disclosure agreement (NDA).
+- **Data Collection**: The images were gathered and categorized by Farmy & Foods Company, operating under a confidential non-disclosure agreement (NDA).
 
 - **Data Distribution**: The dataset is divided into training, validation, and test sets for machine learning purposes.
 
-- **Additional Information**: [Include any additional information about the dataset, such as image dimensions, image quality, or any specific challenges related to the data.]
+- **Additional Information**: The dataset originally consists of images sized at 256 pixels × 256 pixels. However, for practicality and to meet project requirements, these images have been reshaped to dimensions like 50 × 50. This resizing is essential for managing the model's file size and ensuring that it aligns with the project's specifications effectively.
 
 ### Example Image Samples
 
-[You can optionally include a few example image samples to give readers a visual representation of the dataset. Use image links or thumbnails if available.]
+ **Healthy Leaves** 
 
-![Healthy Cherry Leaf](link_to_healthy_leaf_image.jpg) ![Powdery Mildew Cherry Leaf](link_to_mildew_leaf_image.jpg)
+![Healthy Cherry Leaf 1](static/images/healthy_leaf.jpg) ![Healthy Cherry Leaf 2](static/images/healthy_leaf_2.jpg) ![Healthy Cherry Leaf 3](static/images/healthy_leaf_3.jpg)
 
-[Feel free to include as many example images as necessary.]
+**Powdery Mildew Infected Leaves**
+
+![Powdery Mildew Cherry Leaf 1](static/images/powdery_mildew_1.jpg) ![Powdery Mildew Cherry Leaf 2](static/images/powdery_mildew_2.jpg) ![Powdery Mildew Cherry Leaf 3](static/images/powdery_mildew_3.jpg)
+
+
+
 
 ## Project Structure
 
@@ -68,6 +73,7 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 - `app_pages/`: Contains different pages of the web application.
 - `input/`: Input data and resources.
 - `jupyter_notebooks/`: Jupyter notebooks for data exploration and model development.
+- `outputs/`: Generates files as part of its operation, such as reports, logs, or data exports
 - `src/`: Python source code for the project.
 - `static/`: Contains static assets like images and stylesheets.
 - `app.py`: Main application script.
@@ -81,8 +87,24 @@ To run the project locally, follow these steps:
 
 
 ## Hypothesis Validation Page:
-- ...
+- Hypothesis
+  - The hypothesis is that the presence of powdery mildew on leaves can be accurately identified through image analysis.
+
+- Validation Methods
+  - To validate the hypothesis, the project team employed the following methods and observations:
+    - Image Montage Analysis: Powdery mildew-affected leaves exhibit patches of white coating and discoloration.
+    - Average Image Comparison: Powdery mildew-affected leaves tend to be lighter in color compared to healthy leaves.
+    - Variability and Average Difference Images: There is no significant variation around the middle of either leaf, but clear contrast variation is observed around the middle of healthy leaves.
+    - Machine Learning Model: A machine learning model was trained using a dataset of labeled leaf images to automate the identification process. This model was validated against real-world samples.
  
+- Conclusions
+  - Based on the observations and methods mentioned above, the project team drew the following conclusions:
+    - The image analysis approach has shown promising results in accurately identifying powdery mildew-affected leaves from healthy leaves.
+    - Image montage analysis and average image comparison provided valuable insights into the visual differences between healthy and affected leaves.
+    - Variability and average difference images highlighted contrast variations, aiding in the identification process.
+    - The machine learning model demonstrated strong potential for automation, and ongoing validation will provide further insights into its effectiveness.
+    - Further experimentation and validation are ongoing to refine the method and ensure its reliability in real-world scenarios.
+    - The findings suggest that automated image analysis can be a valuable tool in agricultural disease detection and management.
 
 ## Mapping Business Requirements to Data Visualizations and ML Tasks
 - ...
