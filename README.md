@@ -2,14 +2,12 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [CRISP-DM](#crisp-dm)
 - [Business Requirements](#business-requirements)
 - [User Stories](#user-stories)
 - [Dataset Content](#dataset-content)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
 - [Hypothesis Validation Page](#hypothesis-validation-page)
-- [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-ml-tasks)
-- [ML Business Case](#ml-business-case)
 - [Dashboard Design](#dashboard-design)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
@@ -21,6 +19,23 @@
 
 ## Project Overview
 This project aims to develop a solution for differentiating healthy cherry leaves from those affected by powdery mildew using image analysis. Additionally, it involves building a predictive model to automatically classify cherry leaves as healthy or containing powdery mildew.
+
+## CRISP-DM 
+**Cross-Industry Standard Process for Data Mining**
+is a widely used methodology for data mining and machine learning projects. It provides a structured approach to guide teams through the entire data mining process, from understanding business objectives to deploying predictive models.
+
+CRISP-DM is utilized in various industries and domains where data mining and machine learning techniques are applied. It helps organizations and data science teams to:
+1. Understand business objectives and requirements.
+2. Explore and understand the data available for analysis.
+3. Prepare and preprocess data for modeling.
+4. Build, evaluate, and fine-tune predictive models.
+5. Deploy models into operational systems.
+6. Monitor model performance and maintain them over time.
+
+By following the CRISP-DM methodology, organizations can effectively manage and execute data mining projects, leading to better insights and actionable results from their data.
+
+![CRISP-DM Icon](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png)
+
 
 ## Business Requirements:
 The cherry plantation crop from Farmy & Foods faces a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to verify if a given cherry tree contains powdery mildew manually. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and demonstrating visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent using this compound is 1 minute. The company has thousands of cherry trees on multiple farms nationwide. As a result, this manual process could be more scalable due to the time spent in the manual process inspection.
@@ -82,26 +97,6 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 
 
 
-
-## Project Structure
-
-- `.devcontainers/`: Configuration files for development containers.
-- `app_pages/`: Contains different pages of the web application.
-- `input/`: Input data and resources.
-- `jupyter_notebooks/`: Jupyter notebooks for data exploration and model development.
-- `outputs/`: Generates files as part of its operation, such as reports, logs, or data exports
-- `src/`: Python source code for the project.
-- `static/`: Contains static assets like images and stylesheets.
-- `app.py`: Main application script.
-- `README.md`: Project documentation.
-- `requirements.txt`: Lists project dependencies.
-
-
-## Installation
-
-To run the project locally, follow these steps:
-
-
 ## Hypothesis Validation Page:
 - Hypothesis
   - The hypothesis is that the presence of powdery mildew on leaves can be accurately identified through image analysis.
@@ -124,18 +119,12 @@ To run the project locally, follow these steps:
     - Further experimentation and validation are ongoing to refine the method and ensure its reliability in real-world scenarios.
     - The findings suggest that automated image analysis can be a valuable tool in agricultural disease detection and management.
 
-## Mapping Business Requirements to Data Visualizations and ML Tasks
-- ...
-
-
-## ML Business Case
-- ...
-
 
 ## Dashboard Design
 - ...
 
-
+## Manual Testing
+- ...
 
 ## Unfixes Bugs
 - ...
@@ -172,9 +161,20 @@ To run the project locally, follow these steps:
    - Open your IDE and change the working directory to the desired location.
    - Type `git clone` in the terminal and paste the URL to clone the repository.
 
+## Project Structure
+- `.devcontainers/`: Configuration files for development containers.
+- `app_pages/`: Contains different pages of the web application.
+- `input/`: Input data and resources.
+- `jupyter_notebooks/`: Jupyter notebooks for data exploration and model development.
+- `outputs/`: Generates files as part of its operation, such as reports, logs, or data exports
+- `src/`: Python source code for the project.
+- `static/`: Contains static assets like images and stylesheets.
+- `app.py`: Main application script.
+- `README.md`: Project documentation.
+- `requirements.txt`: Lists project dependencies.
+
 
 ## Platforms
-
 - **Heroku**: Deployment platform for the project.
 - **Jupyter Notebook**: Used for code editing.
 - **Kaggle**: Source for downloading datasets.
@@ -182,12 +182,10 @@ To run the project locally, follow these steps:
 - **Gitpod**: Writing and managing code, committing to GitHub, and pushing to GitHub Pages.
 
 ## Languages
-
 - **Python**
 - **Markdown** 
 
 ## Main Data Analysis and Machine Learning Libraries
-
 1. ![tensorflow](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/120px-TensorFlowLogo.svg.png)
    - TensorFlow is an open-source library for machine learning and deep learning tasks. It provides tools for building and training neural networks.
 
@@ -217,7 +215,6 @@ To run the project locally, follow these steps:
 
 
 ## Credits
-
 ### Project Inspiration
 - The idea for this project was inspired by [Mildew Detection in Cherry Leaves](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PA_PAGPPF+2021_Q4/courseware/bde016cdbd184cdeafd341a73807e138/bd2104eb84de4e48a9df6f685773cbf2/).
 
