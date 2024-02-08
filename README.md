@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Business Requirements](#business-requirements)
+- [User Stories](#user-stories)
 - [Dataset Content](#dataset-content)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
@@ -22,19 +23,31 @@
 This project aims to develop a solution for differentiating healthy cherry leaves from those affected by powdery mildew using image analysis. Additionally, it involves building a predictive model to automatically classify cherry leaves as healthy or containing powdery mildew.
 
 ## Business Requirements:
+The cherry plantation crop from Farmy & Foods faces a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to verify if a given cherry tree contains powdery mildew manually. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and demonstrating visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent using this compound is 1 minute. The company has thousands of cherry trees on multiple farms nationwide. As a result, this manual process could be more scalable due to the time spent in the manual process inspection.
+
+To save time, the IT team suggested an ML system that can detect instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests. If this initiative is successful, there is a realistic chance to replicate this project in all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
+
 The project addresses the following business requirements:
 1. **Visual Differentiation**: The client requires a study to visually differentiate healthy cherry leaves from those containing powdery mildew.
 2. **Fungal Disease Detection**: The client seeks to predict whether a cherry leaf is healthy or infected with powdery mildew.
 2. **Daschboard**: The client needs a dashboard that meets the above requirements.
 
-### Epics and User Stories
-| **Epic**                                        | **User Story**                                                                                                                                                                            |
-|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Epic 1: Data Gathering and Preparation**       | - As a data scientist, I want to source the cherry leaf dataset from a reliable data provider. <br> - As a data analyst, I want to clean the dataset by removing missing values and outliers. <br> - As a data engineer, I want to preprocess the images and extract relevant features. |
-| **Epic 2: Data Visualization and Cleaning**       | - As a data analyst, I want to visualize the distribution of healthy and infected cherry leaves. <br> - As a data scientist, I want to clean the dataset by standardizing the pixel values. <br> - As a data engineer, I want to split the dataset into training and testing sets. |
-| **Epic 3: Model Training and Optimization**       | - As a machine learning engineer, I want to choose an appropriate machine learning algorithm. <br> - As a data scientist, I want to train the model using the training dataset. <br> - As a model optimizer, I want to tune hyperparameters for better performance. <br> - As a model evaluator, I want to evaluate the model's accuracy and precision. |
-| **Epic 4: Dashboard Development**                | - As a dashboard developer, I want to design a user-friendly interface. <br> - As a UI designer, I want to create a page for visualizing the dataset summary and client requirements. <br> - As a UI developer, I want to design a page for displaying findings related to cherry leaf differentiation. <br> - As a UI designer, I want to create a page for live prediction of cherry leaf health. <br> - As a UI developer, I want to implement a file uploader widget for image uploads. <br> - As a UI designer, I want to design a page for project hypothesis and validation. <br> - As a UI developer, I want to create a technical page for displaying model performance. |
-| **Epic 5: Dashboard Deployment**                | - As a deployment specialist, I want to deploy the dashboard on a web server. <br> - As a web administrator, I want to ensure the dashboard is accessible to authorized users. <br> - As a maintenance team member, I want to monitor and update the dashboard as needed. |
+## User Stories
+
+| **User Story**                                                                                                                                                                       | **Business Requirement** |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| As a client, I can navigate easily around an interactive dashboard so that I can view and understand the data presented.                                                                  | Visual Differentiation   |
+| As a client, I can view an image montage of either healthy or powdery mildew-affected cherry leaves so that I can visually differentiate them.                                        | Visual Differentiation   |
+| As a client, I can view and toggle visual graphs of average images (and average image difference) and image variabilities for both healthy and powdery mildew-affected cherry leaves so that I can observe the difference and understand the visual markers that indicate leaf quality better. | Visual Differentiation   |
+| As a client, I can access and use a machine learning model so that I can obtain a class prediction on a cherry leaf image provided.                                                      | Fungal Disease Detection |
+| As a client, I can provide new raw data on a cherry leaf and clean it so that I can run the provided model on it.                                                                          | Fungal Disease Detection |
+| As a client, I can feed cleaned data to the dashboard to allow the model to predict it so that I can instantly discover whether a given cherry leaf is healthy or affected by powdery mildew.                                                    | Fungal Disease Detection |
+| As a client, I can save model predictions in a timestamped CSV file so that I can keep an account of the predictions that have been made.                                                   | Fungal Disease Detection |
+| As a client, I can view an explanation of the project's hypotheses so that I can understand the assumptions behind the machine learning model and its predictions.                     | Dashboard Development    |
+| As a client, I can view a performance evaluation of the machine learning model so that I can assess its accuracy and effectiveness.                                                        | Dashboard Development    |
+| As a client, I can access pages containing the findings from the project's conventional data analysis so that I can gain additional insights into the data and its patterns.         | Dashboard Development    |
+
+
 
 ## Dataset Content
 **Dataset**: [Cherry Leaf Dataset on Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
@@ -175,31 +188,31 @@ To run the project locally, follow these steps:
 
 ## Main Data Analysis and Machine Learning Libraries
 
-1. **tensorflow-cpu (version 2.6.0)**:
+1. ![tensorflow](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/120px-TensorFlowLogo.svg.png)
    - TensorFlow is an open-source library for machine learning and deep learning tasks. It provides tools for building and training neural networks.
 
-2. **numpy (version 1.19.2)**:
+2. ![numpy](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/120px-NumPy_logo_2020.svg.png)
    - NumPy is a library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.
 
-3. **scikit-learn (version 0.24.2)**:
+3. ![scikit-learn](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/120px-Scikit_learn_logo_small.svg.png)
    - Scikit-learn is a machine learning library that provides simple and efficient tools for data mining and data analysis. It includes various algorithms for classification, regression, clustering, dimensionality reduction, and model selection.
 
-4. **streamlit (version 0.85.0)**:
+4. ![streamlit](https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png)
    - Streamlit is a library for creating interactive web applications with Python. It allows developers to build data-driven apps quickly and easily by writing simple Python scripts.
 
-5. **pandas (version 1.1.2)**:
+5. ![pandas](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/120px-Pandas_logo.svg.png)
    - Pandas is a library for data manipulation and analysis in Python. It provides data structures like DataFrame and Series, along with functions to clean, filter, and transform data.
 
-6. **matplotlib (version 3.3.1)**:
+6. ![matplotlib](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/120px-Created_with_Matplotlib-logo.svg.png)
    - Matplotlib is a plotting library for Python. It allows developers to create static, animated, and interactive visualizations in Python.
 
-7. **keras (version 2.6.0)**:
+7. ![keras](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/120px-Keras_logo.svg.png)
    - Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, Theano, or CNTK. It simplifies the process of building deep learning models by providing a simple and consistent interface.
 
-8. **plotly (version 5.12.0)**:
+8. ![plotly](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/120px-Plotly-logo-01-square.png)
    - Plotly is a graphing library for Python that makes interactive, publication-quality graphs online. It allows users to create interactive plots, dashboards, and web applications.
 
-9. **seaborn (version 0.11.0)**:
+9. ![seaborn](https://seaborn.pydata.org/_static/logo-wide-lightbg.svg)
    - Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 
