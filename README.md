@@ -1,4 +1,4 @@
-# Mildew Detection in Cherry Leaves Project
+# Podery Mildew Detection in Cherry Leaves Project
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -12,6 +12,8 @@
 - [Dashboard Design](#dashboard-design)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
+- [Platforms](#platforms)
+- [Languages](#languages)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 - [Credits](#credits)
 
@@ -22,7 +24,8 @@ This project aims to develop a solution for differentiating healthy cherry leave
 ## Business Requirements:
 The project addresses the following business requirements:
 1. **Visual Differentiation**: The client requires a study to visually differentiate healthy cherry leaves from those containing powdery mildew.
-2. **Parasite Detection**: The client seeks to predict whether a cherry leaf is healthy or infected with powdery mildew.
+2. **Fungal Disease Detection**: The client seeks to predict whether a cherry leaf is healthy or infected with powdery mildew.
+2. **Daschboard**: The client needs a dashboard that meets the above requirements.
 
 ### Epics and User Stories
 | **Epic**                                        | **User Story**                                                                                                                                                                            |
@@ -38,7 +41,7 @@ The project addresses the following business requirements:
 
 The dataset for the Mildew Detection in Cherry Leaves project consists of a collection of cherry leaf images, each labeled to indicate whether the leaf is healthy or affected by powdery mildew. Here are the key details regarding the dataset:
 
-- **Number of Samples**: The dataset comprises 4,208 curated photographs featuring individual cherry leaves set against a neutral backdrop. 
+- **Number of Samples**: The dataset comprises 4208 curated photographs featuring individual cherry leaves set against a neutral backdrop. 
 
 - **Data Format**: The images are typically in common image formats such as JPEG or PNG.
 
@@ -89,6 +92,8 @@ To run the project locally, follow these steps:
 ## Hypothesis Validation Page:
 - Hypothesis
   - The hypothesis is that the presence of powdery mildew on leaves can be accurately identified through image analysis.
+  - Machine learning can predict if a cherry leaf is healthy or contains powdery mildew based on leaf images.
+  - A user-friendly dashboard can be developed to provide instant cherry leaf health assessments based on uploaded images.
 
 - Validation Methods
   - To validate the hypothesis, the project team employed the following methods and observations:
@@ -124,11 +129,78 @@ To run the project locally, follow these steps:
 
 
 ## Deploymnet 
-- ...
+#### Setup Workspace
 
+1. **Repository Creation:**
+   - Click on ["Use This Template"](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) button.
+   - Select "Create a new repository".
+   - Add a repository name and brief description.
+   - Click "Create Repository" to create your repository.
+
+2. **Heroku Deployment:**
+   - Go to your Heroku account page.
+   - Choose "CREATE NEW APP," give it a unique name, and select a geographical region.
+   - Add the `heroku/python` buildpack from the Settings tab.
+   - From the Deploy tab, choose GitHub as the deployment method, connect to GitHub, and select the project's repository.
+   - Select the branch to deploy, then click "Deploy Branch."
+   - Click to "Enable Automatic Deploys" or choose "Deploy Branch" from the Manual Deploy section.
+   - Wait for the logs to run while the dependencies are installed and the app is being built.
+   - The mock terminal is then ready and accessible from a link similar to `https://your-projects-name.herokuapp.com/`.
+   - If the slug size is too large, add large files not required for the app to the `.slugignore` file.
+
+
+3. **Forking the GitHub Project:**
+   - To create a copy of the GitHub repository:
+     - Navigate to the repository page and click the "Fork" button. This creates a copy on your GitHub account.
+
+4. **Making a Local Clone:**
+   - On the repository page, click on the "Code" button.
+   - Copy the HTTPS URL to clone the repository.
+   - Open your IDE and change the working directory to the desired location.
+   - Type `git clone` in the terminal and paste the URL to clone the repository.
+
+
+## Platforms
+
+- **Heroku**: Deployment platform for the project.
+- **Jupyter Notebook**: Used for code editing.
+- **Kaggle**: Source for downloading datasets.
+- **GitHub**: Repository for storing project code.
+- **Gitpod**: Writing and managing code, committing to GitHub, and pushing to GitHub Pages.
+
+## Languages
+
+- **Python**
+- **Markdown** 
 
 ## Main Data Analysis and Machine Learning Libraries
-- ...
+
+1. **tensorflow-cpu (version 2.6.0)**:
+   - TensorFlow is an open-source library for machine learning and deep learning tasks. It provides tools for building and training neural networks.
+
+2. **numpy (version 1.19.2)**:
+   - NumPy is a library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.
+
+3. **scikit-learn (version 0.24.2)**:
+   - Scikit-learn is a machine learning library that provides simple and efficient tools for data mining and data analysis. It includes various algorithms for classification, regression, clustering, dimensionality reduction, and model selection.
+
+4. **streamlit (version 0.85.0)**:
+   - Streamlit is a library for creating interactive web applications with Python. It allows developers to build data-driven apps quickly and easily by writing simple Python scripts.
+
+5. **pandas (version 1.1.2)**:
+   - Pandas is a library for data manipulation and analysis in Python. It provides data structures like DataFrame and Series, along with functions to clean, filter, and transform data.
+
+6. **matplotlib (version 3.3.1)**:
+   - Matplotlib is a plotting library for Python. It allows developers to create static, animated, and interactive visualizations in Python.
+
+7. **keras (version 2.6.0)**:
+   - Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, Theano, or CNTK. It simplifies the process of building deep learning models by providing a simple and consistent interface.
+
+8. **plotly (version 5.12.0)**:
+   - Plotly is a graphing library for Python that makes interactive, publication-quality graphs online. It allows users to create interactive plots, dashboards, and web applications.
+
+9. **seaborn (version 0.11.0)**:
+   - Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 
 ## Credits
