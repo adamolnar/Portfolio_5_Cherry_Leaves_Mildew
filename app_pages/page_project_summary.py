@@ -20,10 +20,11 @@ def main():
     )
 
     st.success(
-        f"The project is driven by two primary business requirements:\n"
+        f"The project is driven by three primary business requirements:\n"
         f"* 1 - Visual Differentiation: The client seeks to visually differentiate between cherry leaves that are parasitized with powdery mildew and those that are not.\n"
-        f"* 2 - Powdery Mildew Detection: The client aims to determine whether a given cherry leaf contains the powdery mildew fungi."
-    )
+        f"* 2 - Powdery Mildew Detection: The client aims to determine whether a given cherry leaf contains the powdery mildew fungi.\n"
+        f"* 3 - Daschboard: The client needs a dashboard that meets the above requirements."
+    )   
 
 if __name__ == "__main__":
     main()

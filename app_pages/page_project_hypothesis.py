@@ -6,6 +6,8 @@ def main():
     st.info(
         f"### Hypothesis\n"
         f"* The hypothesis is that the presence of powdery mildew on leaves can be accurately identified through image analysis.\n"
+        f"* Machine learning can predict if a cherry leaf is healthy or contains powdery mildew based on leaf images.\n"
+        f"* A user-friendly dashboard can be developed to provide instant cherry leaf health assessments based on uploaded images."
     )
 
     st.info(
