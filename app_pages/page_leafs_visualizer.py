@@ -43,6 +43,27 @@ def page_cells_visualizer_body():
         )
         st.image(diff_between_avgs, caption='Difference between average images')
 
+    if st.checkbox("Differences between powdery mildew and healthy leaves with HSV (Hue, Saturation, Value)"):
+        diff_between_avgs = plt.imread("outputs/v1/hsv_comparison.png")
+
+        st.warning(
+            "This section provides a comprehensive comparison between powdery mildew and healthy leaves using HSV representations. "
+            "The HSV color space decomposes each pixel in an image into its Hue, Saturation, and Value components, offering a more intuitive understanding of color variations and patterns."
+            "\nThe purpose of this analysis is to leverage the HSV color space to identify subtle differences in color characteristics between powdery mildew and healthy leaves. "
+            "By examining the Hue, Saturation, and Value components separately, users can gain insights into the unique color profiles associated with each leaf condition."
+        )
+        st.image(diff_between_avgs, caption='Difference between average images')
+
+    if st.checkbox("Differences between powdery mildew and healthy leaves with greyscale"):
+        diff_between_avgs = plt.imread("outputs/v1/grayscale_comparison.png")
+
+        st.warning(
+            " Grayscale images contain only shades of gray, eliminating color complexity. This simplification can facilitate certain image processing operations and analysis tasks. "
+            " In some cases, converting images to grayscale can enhance contrast and reveal details that may be less visible in color images."
+            " Converting images to grayscale before further analysis or processing might help simplify the task and focus on relevant features related to leaf health or disease detection."
+        )
+        st.image(diff_between_avgs, caption='Difference between average images')
+
     if st.checkbox("Image Montage"): 
         st.write("* To refresh the montage, click on 'Create Montage' button")
         my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
