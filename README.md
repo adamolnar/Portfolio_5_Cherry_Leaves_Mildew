@@ -111,6 +111,7 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
   - Image montage analysis and average image comparison provided valuable insights into the visual differences between healthy and affected leaves.
   - Variability and average difference images highlighted contrast variations, aiding in the identification process.
   - Grayscale visualization and HSV color space conversion provided additional dimensions for analyzing texture, intensity, color variations, and patterns, enhancing the accuracy of powdery mildew identification.
+
   **To visually explore features of both infected and healthy leaves, please visit the [Cherry Leaf Visualizer page]().**
 
  
@@ -122,6 +123,7 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 - **Conclusions:**
   - The machine learning model demonstrated strong potential for automation, and ongoing validation will provide further insights into its effectiveness.
   - Further experimentation and validation are ongoing to refine the method and ensure its reliability in real-world scenarios.
+
   **For an in-depth analysis of the model's performance metrics, please proceed to the [ML Performance Metrics page]().**
 
 ## Hypothesis 3: Dashboard Development for Instant Health Assessment
@@ -132,16 +134,20 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 - **Conclusions:**
   - The findings suggest that automated image analysis can be a valuable tool in agricultural disease detection and management.
   - Ongoing development and refinement of the dashboard will enhance its usability and effectiveness in providing instant health assessments.
+
 **For an assessment of the ML model's performance, please go to the [Powdery Mildew Detection page]().**
 
 ## Dashboard Design
 The Project Overview section provides a comprehensive understanding of the project's objectives and purpose. It includes details about the dataset utilized, breaks down the problem statement, and outlines the step-by-step plan devised to effectively address and resolve the challenge at hand.
 
-1. **Home Page**: The 'Home Page' serves as an introduction to the Cherry Leaf Mildew Detection App, providing users with information on how to use the app and what they can expect to find in each section.
+### 1. **Home Page**: 
+The 'Home Page' serves as an introduction to the Cherry Leaf Mildew Detection App, providing users with information on how to use the app and what they can expect to find in each section.
 
-2. **Project Summary**: The "Project Summary" page provides a comprehensive overview of the Cherry Leaf Mildew Detection project. It offers general information about the project's purpose, dataset, and primary business requirements. Users can learn about the significance of detecting powdery mildew on cherry leaves, the impact it can have on crop yield, and the importance of early detection for effective disease management. Additionally, details about the project dataset, including the types of images available and their role in training the machine learning model, are provided. The page also outlines the three main business requirements driving the project, which include visual differentiation of healthy and infected leaves, powdery mildew detection, and the development of a dashboard to meet these objectives. Overall, the "Project Summary" page serves as a foundational resource for understanding the scope and goals of the Cherry Leaf Mildew Detection project.
+### 2. **Project Summary**: 
+The "Project Summary" page provides a comprehensive overview of the Cherry Leaf Mildew Detection project. It offers general information about the project's purpose, dataset, and primary business requirements. Users can learn about the significance of detecting powdery mildew on cherry leaves, the impact it can have on crop yield, and the importance of early detection for effective disease management. Additionally, details about the project dataset, including the types of images available and their role in training the machine learning model, are provided. The page also outlines the three main business requirements driving the project, which include visual differentiation of healthy and infected leaves, powdery mildew detection, and the development of a dashboard to meet these objectives. Overall, the "Project Summary" page serves as a foundational resource for understanding the scope and goals of the Cherry Leaf Mildew Detection project.
 
-3. **Cherry Leaf Visualizer**: The "Data Visualization" page provides users with interactive tools to visually explore various aspects of the cherry leaf dataset. Its primary purpose is to facilitate a deeper understanding of the characteristics that differentiate healthy cherry leaves from those infected with powdery mildew.
+### 3. **Cherry Leaf Visualizer**: 
+The "Data Visualization" page provides users with interactive tools to visually explore various aspects of the cherry leaf dataset. Its primary purpose is to facilitate a deeper understanding of the characteristics that differentiate healthy cherry leaves from those infected with powdery mildew.
 
 Key functionalities of the page include:
 
@@ -158,7 +164,8 @@ Key functionalities of the page include:
 
 Overall, the "Data Visualization" page serves as a valuable tool for users to gain insights into the characteristics of cherry leaves affected by powdery mildew and aids in the development of strategies for disease detection and management.
 
-4. **Mildew Detection**: The "Mildew Detector" application serves the purpose of predicting whether a cherry leaf is healthy or contains powdery mildew, a common fungal disease affecting cherry trees. Users can upload cherry leaf images, and the application provides predictions along with confidence scores. The predictions are based on a machine learning model trained on a dataset of healthy and powdery mildew-affected cherry leaves.
+### 4. **Mildew Detection**: 
+The "Mildew Detector" application serves the purpose of predicting whether a cherry leaf is healthy or contains powdery mildew, a common fungal disease affecting cherry trees. Users can upload cherry leaf images, and the application provides predictions along with confidence scores. The predictions are based on a machine learning model trained on a dataset of healthy and powdery mildew-affected cherry leaves.
 
 Key features of the application include:
 
@@ -172,7 +179,8 @@ Key features of the application include:
 
 Overall, the "Mildew Detector" application offers a convenient way to assess the health of cherry leaves and detect the presence of powdery mildew, contributing to early disease detection and effective management in cherry tree cultivation.
 
-5. **Project Hypothesis**: The "Project Hypothesis and Validation" page provides a detailed overview of the hypotheses formulated and the validation methods employed in the cherry leaf mildew detection project. It consists of three main sections:
+### 5. **Project Hypothesis**: 
+The "Project Hypothesis and Validation" page provides a detailed overview of the hypotheses formulated and the validation methods employed in the cherry leaf mildew detection project. It consists of three main sections:
 
 - **Hypothesis 1**: Image Analysis for Powdery Mildew Identification: This section presents the hypothesis that the presence of powdery mildew on leaves can be accurately identified through image analysis. It outlines various validation methods, including image montage analysis, average image comparison, variability, average difference images, grayscale visualization, and HSV color space conversion.
 
@@ -182,14 +190,36 @@ Overall, the "Mildew Detector" application offers a convenient way to assess the
 
 Each hypothesis is accompanied by its respective validation methods, providing insights into how the hypotheses were tested and evaluated. Finally, the conclusions drawn from the observations and methods are summarized, highlighting the project's findings and implications.
 
-6. **ML Performance Metrics**: 
+### 6. **ML Performance Metrics**:
+
 
 
 
 
 
 ## Manual Testing
-- ...
+
+| Test Case | Description                                     | Expected Result                       | Pass/Fail |
+|-----------|-------------------------------------------------|---------------------------------------|-----------|
+| Home Page Navigation       | Verify that users can navigate through different sections of the app from the home page.              | Users can navigate without errors       | ✅        |
+| Download Healthy and Powdery Mildew Leaf Images | Click on the provided link to download a set of healthy and powdery mildew leaf images. | Images are downloaded successfully. | ✅ |
+| Upload Healthy Leaf Image | Upload an image of a healthy cherry leaf for analysis. | Image is processed successfully       | ✅        |
+| Upload Mildew-Infected Leaf Image | Upload an image of a cherry leaf infected with powdery mildew. | Image is processed successfully       | ✅        |
+| Download CSV | Click on the provided link to download a CSV file. | CSV file is downloaded successfully. | ✅ |
+| Difference between average and variability image | Tick the checkbox "Difference between average and variability image" on the Cherry Leaf Visualizer page. | A plot of the mean and variability of images appears along with the observation block. | ✅ |
+| Differences between average powdery mildew and average healthy leaves | Tick the checkbox "Differences between average powdery mildew and average healthy leaves" on the Cherry Leaf Visualizer page. | A plot of average healthy, average powdery mildew cherry leaves and the difference appears along with the observation block. | ✅ |
+| Identification of Differences between Powdery Mildew and Healthy Cherry Leaves Using HSV Color Space | Tick the checkbox "Identification of Differences between Powdery Mildew and Healthy Cherry Leaves Using HSV Color Space" on the Cherry Leaf Visualizer page. | A comprehensive comparison between powdery mildew and healthy leaves using HSV representations appears. | ✅ |
+| Distinguishing Powdery Mildew from Healthy Leaves Using Greyscale Images | Tick the checkbox "Distinguishing Powdery Mildew from Healthy Leaves Using Greyscale Images" on the Cherry Leaf Visualizer page. | Grayscale comparison images appear, facilitating differentiation between powdery mildew and healthy leaves. | ✅ |
+| Create Montage | Tick the "Image Montage" checkbox. Choose a label from the dropdown menu and click on the button "Create Montage". | The Image Montage section appears, the dropdown menu functions correctly and the montage with the selected label is created. | ✅ |
+| Cherry Leaf Visualizer Page | Navigate to the Cherry Leaf Visualizer page. | Page loads without errors             | ✅        |
+| Upload Dataset for ML | Upload a dataset for machine learning analysis. | Dataset is uploaded successfully      | ✅        |
+| ML Performance Metrics Page | Access the ML Performance Metrics page. | Page displays relevant performance metrics    | ✅        |
+
+
+
+
+
+
 
 ## Unfixes Bugs
 - ...
@@ -272,7 +302,7 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 7. ![keras](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/120px-Keras_logo.svg.png)
    - Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, Theano, or CNTK. It simplifies the process of building deep learning models by providing a simple and consistent interface.
 
-8. ![plotly](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/120px-Plotly-logo-01-square.png)
+8. ![Plotly Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/120px-Plotly-logo-01-square.png)
    - Plotly is a graphing library for Python that makes interactive, publication-quality graphs online. It allows users to create interactive plots, dashboards, and web applications.
 
 9. ![seaborn](https://seaborn.pydata.org/_static/logo-wide-lightbg.svg)
