@@ -43,7 +43,7 @@ def page_cells_visualizer_body():
         )
         st.image(diff_between_avgs, caption='Difference between average images')
 
-    if st.checkbox("Differences between powdery mildew and healthy leaves with HSV (Hue, Saturation, Value)"):
+    if st.checkbox("Identification of Differences between Powdery Mildew and Healthy Cherry Leaves Using HSV Color Space"):
         diff_between_avgs = plt.imread("outputs/v1/hsv_comparison.png")
 
         st.warning(
@@ -54,7 +54,7 @@ def page_cells_visualizer_body():
         )
         st.image(diff_between_avgs, caption='Difference between average images')
 
-    if st.checkbox("Differences between powdery mildew and healthy leaves with greyscale"):
+    if st.checkbox("Distinguishing Powdery Mildew from Healthy Leaves Using Greyscale Images"):
         diff_between_avgs = plt.imread("outputs/v1/grayscale_comparison.png")
 
         st.warning(

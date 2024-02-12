@@ -84,3 +84,4 @@ validators==0.22.0
 watchdog==3.0.0
 Werkzeug==3.0.1
 wrapt==1.16.0
+yellowbrick==1.5
