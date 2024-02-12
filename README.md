@@ -1,26 +1,36 @@
 # Podery Mildew Detection in Cherry Leaves Project
 
-## Table of Contents
+...
+
+<br>
+
+## <div style="background-color:grey">TABLE OF CONTENT</div>
+
 - [Project Overview](#project-overview)
 - [CRISP-DM](#crisp-dm)
 - [Business Requirements](#business-requirements)
 - [User Stories](#user-stories)
 - [Dataset Content](#dataset-content)
-- [Project Structure](#project-structure)
-- [Hypothesis Validation Page](#hypothesis-validation-page)
+- [Project Structure](#projects-structure)
+- [Hypothesis](#hypothesis)
 - [Dashboard Design](#dashboard-design)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
 - [Platforms](#platforms)
 - [Languages](#languages)
-- [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+- [Main Data Analysis and Machine Learning Libraries](#main-libraries)
 - [Credits](#credits)
 
+<br>
 
-## Project Overview
+## <div style="background-color:grey" id="project-overview">PROJECT OVERVIEW</div>
+
 This project aims to develop a solution for differentiating healthy cherry leaves from those affected by powdery mildew using image analysis. Additionally, it involves building a predictive model to automatically classify cherry leaves as healthy or containing powdery mildew.
 
-## CRISP-DM 
+<br>
+
+## <div style="background-color:grey" id="crisp-dm">CRISP-DM</div>
+
 **Cross-Industry Standard Process for Data Mining**
 is a widely used methodology for data mining and machine learning projects. It provides a structured approach to guide teams through the entire data mining process, from understanding business objectives to deploying predictive models.
 
@@ -36,8 +46,10 @@ By following the CRISP-DM methodology, organizations can effectively manage and 
 
 ![CRISP-DM Icon](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png)
 
+<br>
 
-## Business Requirements:
+## <div style="background-color:grey" id="business-requirements">BUSINESS REQUIREMENTS</div>
+
 The cherry plantation crop from Farmy & Foods faces a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to verify if a given cherry tree contains powdery mildew manually. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and demonstrating visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent using this compound is 1 minute. The company has thousands of cherry trees on multiple farms nationwide. As a result, this manual process could be more scalable due to the time spent in the manual process inspection.
 
 To save time, the IT team suggested an ML system that can detect instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests. If this initiative is successful, there is a realistic chance to replicate this project in all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
@@ -47,7 +59,9 @@ The project addresses the following business requirements:
 2. **Powdery Mildew Detection**: The client seeks to predict whether a cherry leaf is healthy or infected with powdery mildew.
 2. **Daschboard**: The client needs a dashboard that meets the above requirements.
 
-## User Stories
+<br>
+
+## <div style="background-color:grey" id="user-stories">USER STORIES</div>
 
 | **User Story**                                                                                                                                                                       | **Business Requirement** |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -64,7 +78,10 @@ The project addresses the following business requirements:
 
 **Find the Kanban board Project [here](https://github.com/users/adamolnar/projects/10/views/1?layout=board).**
 
-## Dataset Content
+<br>
+
+## <div style="background-color:grey" id="dataset-content">DATASET CONTENT</div>
+
 **Dataset**: [Cherry Leaf Dataset on Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
 
 The dataset for the Mildew Detection in Cherry Leaves project consists of a collection of cherry leaf images, each labeled to indicate whether the leaf is healthy or affected by powdery mildew. Here are the key details regarding the dataset:
@@ -97,7 +114,9 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 
 
 
-## Hypothesis 1: Image Analysis for Powdery Mildew Identification
+## <div style="background-color:grey" id="hypothesis">HYPOTHESIS</div>
+
+### Hypothesis 1: Image Analysis for Powdery Mildew Identification
 - **Hypothesis:**
   - The presence of powdery mildew on leaves can be accurately identified through image analysis.
 - **Validation Methods:**
@@ -115,7 +134,7 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
   **To visually explore features of both infected and healthy leaves, please visit the [Cherry Leaf Visualizer page]().**
 
  
-## Hypothesis 2: Machine Learning for Cherry Leaf Health Prediction
+### Hypothesis 2: Machine Learning for Cherry Leaf Health Prediction
 - **Hypothesis:**
   - Machine learning can predict if a cherry leaf is healthy or contains powdery mildew based on leaf images.
 - **Validation Methods:**
@@ -126,7 +145,7 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 
   **For an in-depth analysis of the model's performance metrics, please proceed to the [ML Performance Metrics page]().**
 
-## Hypothesis 3: Dashboard Development for Instant Health Assessment
+### Hypothesis 3: Dashboard Development for Instant Health Assessment
 - **Hypothesis:**
   - A user-friendly dashboard can be developed to provide instant cherry leaf health assessments based on uploaded images.
 - **Validation Methods:**
@@ -137,7 +156,8 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 
 **For an assessment of the ML model's performance, please go to the [Powdery Mildew Detection page]().**
 
-## Dashboard Design
+## <div style="background-color:grey" id="dashboard-design">DASHBOARD DESIGN</div>
+
 The Project Overview section provides a comprehensive understanding of the project's objectives and purpose. It includes details about the dataset utilized, breaks down the problem statement, and outlines the step-by-step plan devised to effectively address and resolve the challenge at hand.
 
 ### 1. **Home Page**: 
@@ -191,13 +211,9 @@ The "Project Hypothesis and Validation" page provides a detailed overview of the
 Each hypothesis is accompanied by its respective validation methods, providing insights into how the hypotheses were tested and evaluated. Finally, the conclusions drawn from the observations and methods are summarized, highlighting the project's findings and implications.
 
 ### 6. **ML Performance Metrics**:
+...
 
-
-
-
-
-
-## Manual Testing
+## <div style="background-color:grey" id="manual-testing">MANUAL TESTING</div>
 
 | Test Case | Description                                     | Expected Result                       | Pass/Fail |
 |-----------|-------------------------------------------------|---------------------------------------|-----------|
@@ -215,17 +231,13 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 | Upload Dataset for ML | Upload a dataset for machine learning analysis. | Dataset is uploaded successfully      | ✅        |
 | ML Performance Metrics Page | Access the ML Performance Metrics page. | Page displays relevant performance metrics    | ✅        |
 
+## <div style="background-color:grey" id="unfixed-bugs">UNFIXED BUGS</div>
 
-
-
-
-
-
-## Unfixes Bugs
 - ...
 
 
-## Deploymnet 
+## <div style="background-color:grey" id="deployment">DEPLOYMENT</div>
+
 #### Setup Workspace
 
 1. **Repository Creation:**
@@ -256,7 +268,8 @@ Each hypothesis is accompanied by its respective validation methods, providing i
    - Open your IDE and change the working directory to the desired location.
    - Type `git clone` in the terminal and paste the URL to clone the repository.
 
-## Project Structure
+## <div style="background-color:grey" id="projects-structure">PROJECT STRUCTURE</div>
+
 - `.devcontainers/`: Configuration files for development containers.
 - `app_pages/`: Contains different pages of the web application.
 - `input/`: Input data and resources.
@@ -269,18 +282,22 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 - `requirements.txt`: Lists project dependencies.
 
 
-## Platforms
+## <div style="background-color:grey" id="platforms">PLATFORMS</div>
+
 - **Heroku**: Deployment platform for the project.
 - **Jupyter Notebook**: Used for code editing.
 - **Kaggle**: Source for downloading datasets.
 - **GitHub**: Repository for storing project code.
 - **Gitpod**: Writing and managing code, committing to GitHub, and pushing to GitHub Pages.
 
-## Languages
+
+## <div style="background-color:grey" id="languages">LANGUAGES</div>
+
 - **Python**
 - **Markdown** 
 
-## Main Data Analysis and Machine Learning Libraries
+
+## <div style="background-color:grey" id="main-libraries">MAIN DATA ANALYSIS AND MASCHINE LEARNING LIBRARIES</div>
 1. ![tensorflow](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/120px-TensorFlowLogo.svg.png)
    - TensorFlow is an open-source library for machine learning and deep learning tasks. It provides tools for building and training neural networks.
 
@@ -309,7 +326,7 @@ Each hypothesis is accompanied by its respective validation methods, providing i
    - Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 
-## Credits
+## <div style="background-color:grey" id="credits">CREDITS</div>
 ### Project Inspiration
 - The idea for this project was inspired by [Mildew Detection in Cherry Leaves](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PA_PAGPPF+2021_Q4/courseware/bde016cdbd184cdeafd341a73807e138/bd2104eb84de4e48a9df6f685773cbf2/).
 
