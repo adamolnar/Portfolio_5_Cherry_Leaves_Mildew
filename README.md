@@ -166,19 +166,21 @@ If the dataset demonstrates balance, extensive cleaning will be unnecessary, ena
 
 ## <div style="background-color:grey" id="ml-business-case">ML BUSINESS CASE</div>
 
-1. **Business Requirements:**
+---
+
+### 1. **Business Requirements:**
 - The client seeks a solution to distinguish healthy cherry leaves from those infected with powdery mildew. ML offers the capability to analyze images and classify them accurately based on learned patterns.
 
-2. **Conventional Data Analysis:**
+### 2. **Conventional Data Analysis:**
 - Traditional data analysis methods can address the first requirement. However, ML is essential for fulfilling the second requirement, which involves image classification.
 
-3. **Dashboard Requirement:**
+### 3. **Dashboard Requirement:**
 - The client's need is for a dashboard interface to visualize the results and predictions, indicating the necessity of a user-friendly interface.
 
-4. **Successful Project Outcome:**
+### 4. **Successful Project Outcome:**
 - The successful outcome involves accurately differentiating between healthy and powdery mildew-infected cherry leaves, accompanied by a user-friendly dashboard for visualizing results and making predictions.
 
-5. **Epics and User Stories:**
+### 5. **Epics and User Stories:**
 - The project can be segmented into distinct epics and user stories to manage tasks effectively.
 
 <details>
@@ -205,19 +207,19 @@ If the dataset demonstrates balance, extensive cleaning will be unnecessary, ena
 
 <br>
 
-6. **Ethical and Privacy Considerations:**
+### 6. **Ethical and Privacy Considerations:**
 - Due to the non-disclosure agreement, data privacy is paramount, and access should be restricted to authorized personnel only.
 
-7. **Model Selection:**
+### 7. **Model Selection:**
 - The nature of the data suggests the need for a binary classification model, which is suitable for distinguishing between two classes.
 
-8. **Model Inputs and Outputs:**
+### 8. **Model Inputs and Outputs:**
 - Input: Cherry leaf images; Output: Predictions indicating whether the leaf is healthy or infected with powdery mildew.
 
-9. **Performance Goals:**
+### 9. **Performance Goals:**
 - The project aims for a minimum accuracy of 97%, although the model has been trained to achieve even higher accuracy.
 
-10. **Client Benefits:**
+### 10. **Client Benefits:**
 - By implementing the ML solution, the client can ensure the quality of their product and streamline their operations by automating the detection of powdery mildew, thus reducing manual efforts.
 
 <br>
@@ -392,32 +394,23 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 --- 
 
-1. ![tensorflow](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/120px-TensorFlowLogo.svg.png)
-   - TensorFlow is an open-source library for machine learning and deep learning tasks. It provides tools for building and training neural networks.
+1. **TensorFlow** is an open-source library for machine learning and deep learning tasks. It provides tools for building and training neural networks.
 
-2. ![numpy](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/120px-NumPy_logo_2020.svg.png)
-   - NumPy is a library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.
+2. **NumPy** is a library for numerical computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.
 
-3. ![scikit-learn](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/120px-Scikit_learn_logo_small.svg.png)
-   - Scikit-learn is a machine learning library that provides simple and efficient tools for data mining and data analysis. It includes various algorithms for classification, regression, clustering, dimensionality reduction, and model selection.
+3. **Scikit-learn** is a machine learning library that provides simple and efficient tools for data mining and data analysis. It includes various algorithms for classification, regression, clustering, dimensionality reduction, and model selection.
 
-4. ![streamlit](https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png)
-   - Streamlit is a library for creating interactive web applications with Python. It allows developers to build data-driven apps quickly and easily by writing simple Python scripts.
+4. **Streamlit** is a library for creating interactive web applications with Python. It allows developers to build data-driven apps quickly and easily by writing simple Python scripts.
 
-5. ![pandas](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/120px-Pandas_logo.svg.png)
-   - Pandas is a library for data manipulation and analysis in Python. It provides data structures like DataFrame and Series, along with functions to clean, filter, and transform data.
+5. **Pandas** is a library for data manipulation and analysis in Python. It provides data structures like DataFrame and Series, along with functions to clean, filter, and transform data.
 
-6. ![matplotlib](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/120px-Created_with_Matplotlib-logo.svg.png)
-   - Matplotlib is a plotting library for Python. It allows developers to create static, animated, and interactive visualizations in Python.
+6. **Matplotlib** is a plotting library for Python. It allows developers to create static, animated, and interactive visualizations in Python.
 
-7. ![keras](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/120px-Keras_logo.svg.png)
-   - Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, Theano, or CNTK. It simplifies the process of building deep learning models by providing a simple and consistent interface.
+7. **Keras** is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, Theano, or CNTK. It simplifies the process of building deep learning models by providing a simple and consistent interface.
 
-8. ![Plotly Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/120px-Plotly-logo-01-square.png)
-   - Plotly is a graphing library for Python that makes interactive, publication-quality graphs online. It allows users to create interactive plots, dashboards, and web applications.
+8. **Plotly** is a graphing library for Python that makes interactive, publication-quality graphs online. It allows users to create interactive plots, dashboards, and web applications.
 
-9. ![seaborn](https://seaborn.pydata.org/_static/logo-wide-lightbg.svg)
-   - Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+9. **Seaborn** is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 <br>
 
