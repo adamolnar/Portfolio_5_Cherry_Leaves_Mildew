@@ -8,14 +8,16 @@
 
 - [Project Overview](#project-overview)
 - [CRISP-DM](#crisp-dm)
-- [Business Requirements](#business-requirements)
 - [User Stories](#user-stories)
 - [Dataset Content](#dataset-content)
-- [Project Structure](#projects-structure)
+- [Business Requirements](#business-requirements)
 - [Hypothesis](#hypothesis)
+- [The rationale to map the business requirements to the Data Visualisations and ML tasks](#ml-tasks)
+- [ML Business Case](#ml-business-case)
 - [Dashboard Design](#dashboard-design)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
+- [Project Structure](#projects-structure)
 - [Platforms](#platforms)
 - [Languages](#languages)
 - [Main Data Analysis and Machine Learning Libraries](#main-libraries)
@@ -49,23 +51,6 @@ CRISP-DM is utilized in various industries and domains where data mining and mac
 By following the CRISP-DM methodology, organizations can effectively manage and execute data mining projects, leading to better insights and actionable results from their data.
 
 ![CRISP-DM Icon](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png)
-
-<br>
-
-## <div style="background-color:grey" id="business-requirements">BUSINESS REQUIREMENTS</div>
-
---- 
-
-The cherry plantation crop from Farmy & Foods faces a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to verify if a given cherry tree contains powdery mildew manually. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and demonstrating visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent using this compound is 1 minute. The company has thousands of cherry trees on multiple farms nationwide. As a result, this manual process could be more scalable due to the time spent in the manual process inspection.
-
-To save time, the IT team suggested an ML system that can detect instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests. If this initiative is successful, there is a realistic chance to replicate this project in all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
-
-The project addresses the following business requirements:
-1. **Visual Differentiation**: The client requires a study to visually differentiate healthy cherry leaves from those containing powdery mildew.
-2. **Powdery Mildew Detection**: The client seeks to predict whether a cherry leaf is healthy or infected with powdery mildew.
-2. **Daschboard**: The client needs a dashboard that meets the above requirements.
-
-<br>
 
 ## <div style="background-color:grey" id="user-stories">USER STORIES</div>
 
@@ -124,6 +109,20 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
 
 <br>
 
+## <div style="background-color:grey" id="business-requirements">BUSINESS REQUIREMENTS</div>
+
+--- 
+
+The cherry plantation crop from Farmy & Foods faces a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to verify if a given cherry tree contains powdery mildew manually. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and demonstrating visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent using this compound is 1 minute. The company has thousands of cherry trees on multiple farms nationwide. As a result, this manual process could be more scalable due to the time spent in the manual process inspection.
+
+To save time, the IT team suggested an ML system that can detect instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests. If this initiative is successful, there is a realistic chance to replicate this project in all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
+
+The project addresses the following business requirements:
+1. **Visual Differentiation**: The client requires a study to visually differentiate healthy cherry leaves from those containing powdery mildew.
+2. **Powdery Mildew Detection**: The client seeks to predict whether a cherry leaf is healthy or infected with powdery mildew.
+
+<br>
+
 ## <div style="background-color:grey" id="hypothesis">HYPOTHESIS</div>
 
 --- 
@@ -167,6 +166,20 @@ The dataset for the Mildew Detection in Cherry Leaves project consists of a coll
   - Ongoing development and refinement of the dashboard will enhance its usability and effectiveness in providing instant health assessments.
 
 **For an assessment of the ML model's performance, please go to the [Powdery Mildew Detection page]().**
+
+<br>
+
+## <div style="background-color:grey" id="ml-tasks">THE RATIONALE TO MAP THE BUSINESS REQUIREMENTS TO THE DATA VISUALIZATIONS AND ML TASKS</div>
+
+--- 
+
+**Business Requirement 1:**
+
+The client's foremost objective is to effectively distinguish between healthy cherry leaves and those infected by powdery mildew, framing the task as a classification problem. To achieve this, we need a dataset that encompasses two distinct classes: healthy leaves and those exhibiting powdery mildew. We'll then assess the balance of the data, ensuring an equitable distribution of labels across both classes. If the data is balanced, indicating similar frequencies for each class, we'll proceed with further analysis. Our initial steps will involve creating an Image Montage to visually inspect differences between the two classes using the provided dataset. Additionally, we'll examine the average and variability images for both classes to discern patterns present on the leaves.
+
+**Business Requirement 2:**
+
+If the dataset demonstrates balance, extensive cleaning will be unnecessary, enabling us to address the second requirement: predicting whether a new leaf is healthy or affected by powdery mildew. Subsequently, we will deliver a dashboard solution to the client. Utilizing Convolutional Neural Networks for image prediction, the model will discern patterns, colors, and variations to categorize the leaves effectively. The dashboard will encompass both an image montage feature and a prediction capability, streamlining the process of identifying affected plants and enhancing operational efficiency. The client will have the flexibility to employ the dashboard for any quantity of cherry leaves, facilitating the provision of healthy fruit to their customers.
 
 <br>
 
