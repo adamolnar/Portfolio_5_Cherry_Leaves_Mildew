@@ -412,6 +412,8 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 9. **Seaborn** is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
+10. **OpenCV** (Open Source Computer Vision Library) is a library of programming functions mainly aimed at real-time computer vision. It provides tools and utilities for image processing, object detection, face recognition, and more, making it indispensable for computer vision applications.
+
 <br>
 
 ## <div style="background-color:grey" id="credits">CREDITS</div>
@@ -432,3 +434,6 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 ### Favicon Image
 - The project favicon image was sourced from [Freepik](https://www.freepik.com/icon/leaf_892917).
+
+### Acknowledgements
+- Thank the people that provided support throughout this project.
