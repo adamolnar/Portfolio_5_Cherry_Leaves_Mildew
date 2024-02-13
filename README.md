@@ -8,13 +8,13 @@
 
 - [Project Overview](#project-overview)
 - [CRISP-DM](#crisp-dm)
-- [User Stories](#user-stories)
 - [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
 - [Hypothesis](#hypothesis)
 - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#ml-tasks)
 - [ML Business Case](#ml-business-case)
 - [Dashboard Design](#dashboard-design)
+- [Manual Testing](#manual-testing)
 - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
 - [Project Structure](#projects-structure)
@@ -51,25 +51,6 @@ CRISP-DM is utilized in various industries and domains where data mining and mac
 By following the CRISP-DM methodology, organizations can effectively manage and execute data mining projects, leading to better insights and actionable results from their data.
 
 ![CRISP-DM Icon](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png)
-
-## <div style="background-color:grey" id="user-stories">USER STORIES</div>
-
---- 
-
-| **User Story**                                                                                                                                                                       | **Business Requirement** |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| As a client, I can navigate easily around an interactive dashboard so that I can view and understand the data presented.                                                                  | Visual Differentiation   |
-| As a client, I can view an image montage of either healthy or powdery mildew-affected cherry leaves so that I can visually differentiate them.                                        | Visual Differentiation   |
-| As a client, I can view and toggle visual graphs of average images (and average image difference) and image variabilities for both healthy and powdery mildew-affected cherry leaves so that I can observe the difference and understand the visual markers that indicate leaf quality better. | Visual Differentiation   |
-| As a client, I can access and use a machine learning model so that I can obtain a class prediction on a cherry leaf image provided.                                                      | Powdery Mildew Disease Detection |
-| As a client, I can provide new raw data on a cherry leaf and clean it so that I can run the provided model on it.                                                                          | Powdery Mildew Disease Detection |
-| As a client, I can feed cleaned data to the dashboard to allow the model to predict it so that I can instantly discover whether a given cherry leaf is healthy or affected by powdery mildew.                                                    | Powdery Mildew Disease Detection |
-| As a client, I can save model predictions in a timestamped CSV file so that I can keep an account of the predictions that have been made.                                                   | Powdery Mildew Disease Detection |
-| As a client, I can view an explanation of the project's hypotheses so that I can understand the assumptions behind the machine learning model and its predictions.                     | Dashboard Development    |
-| As a client, I can view a performance evaluation of the machine learning model so that I can assess its accuracy and effectiveness.                                                        | Dashboard Development    |
-| As a client, I can access pages containing the findings from the project's conventional data analysis so that I can gain additional insights into the data and its patterns.         | Dashboard Development    |
-
-**Find the Kanban board Project [here](https://github.com/users/adamolnar/projects/10/views/1?layout=board).**
 
 <br>
 
@@ -180,6 +161,64 @@ The client's foremost objective is to effectively distinguish between healthy ch
 **Business Requirement 2:**
 
 If the dataset demonstrates balance, extensive cleaning will be unnecessary, enabling us to address the second requirement: predicting whether a new leaf is healthy or affected by powdery mildew. Subsequently, we will deliver a dashboard solution to the client. Utilizing Convolutional Neural Networks for image prediction, the model will discern patterns, colors, and variations to categorize the leaves effectively. The dashboard will encompass both an image montage feature and a prediction capability, streamlining the process of identifying affected plants and enhancing operational efficiency. The client will have the flexibility to employ the dashboard for any quantity of cherry leaves, facilitating the provision of healthy fruit to their customers.
+
+<br>
+
+## <div style="background-color:grey" id="ml-business-case">ML BUSINESS CASE</div>
+
+1. **Business Requirements:**
+- The client seeks a solution to distinguish healthy cherry leaves from those infected with powdery mildew. ML offers the capability to analyze images and classify them accurately based on learned patterns.
+
+2. **Conventional Data Analysis:**
+- Traditional data analysis methods can address the first requirement. However, ML is essential for fulfilling the second requirement, which involves image classification.
+
+3. **Dashboard Requirement:**
+- The client's need is for a dashboard interface to visualize the results and predictions, indicating the necessity of a user-friendly interface.
+
+4. **Successful Project Outcome:**
+- The successful outcome involves accurately differentiating between healthy and powdery mildew-infected cherry leaves, accompanied by a user-friendly dashboard for visualizing results and making predictions.
+
+5. **Epics and User Stories:**
+- The project can be segmented into distinct epics and user stories to manage tasks effectively.
+
+<details>
+<summary><b>User Stories</b></summary>
+
+| **User Story**                                                                                                                                                                       | **Business Requirement** |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| As a client, I can navigate easily around an interactive dashboard so that I can view and understand the data presented.                                                                  | Visual Differentiation   |
+| As a client, I can view an image montage of either healthy or powdery mildew-affected cherry leaves so that I can visually differentiate them.                                        | Visual Differentiation   |
+| As a client, I can view and toggle visual graphs of average images (and average image difference) and image variabilities for both healthy and powdery mildew-affected cherry leaves so that I can observe the difference and understand the visual markers that indicate leaf quality better. | Visual Differentiation   |
+| As a client, I can access and use a machine learning model so that I can obtain a class prediction on a cherry leaf image provided.                                                      | Powdery Mildew Disease Detection |
+| As a client, I can provide new raw data on a cherry leaf and clean it so that I can run the provided model on it.                                                                          | Powdery Mildew Disease Detection |
+| As a client, I can feed cleaned data to the dashboard to allow the model to predict it so that I can instantly discover whether a given cherry leaf is healthy or affected by powdery mildew.                                                    | Powdery Mildew Disease Detection |
+| As a client, I can save model predictions in a timestamped CSV file so that I can keep an account of the predictions that have been made.                                                   | Powdery Mildew Disease Detection |
+| As a client, I can view an explanation of the project's hypotheses so that I can understand the assumptions behind the machine learning model and its predictions.                     | Dashboard Development    |
+| As a client, I can view a performance evaluation of the machine learning model so that I can assess its accuracy and effectiveness.                                                        | Dashboard Development    |
+| As a client, I can access pages containing the findings from the project's conventional data analysis so that I can gain additional insights into the data and its patterns.         | Dashboard Development    |
+
+
+
+</details>
+
+**Find the Kanban board Project [here](https://github.com/users/adamolnar/projects/10/views/1?layout=board).**
+
+<br>
+
+6. **Ethical and Privacy Considerations:**
+- Due to the non-disclosure agreement, data privacy is paramount, and access should be restricted to authorized personnel only.
+
+7. **Model Selection:**
+- The nature of the data suggests the need for a binary classification model, which is suitable for distinguishing between two classes.
+
+8. **Model Inputs and Outputs:**
+- Input: Cherry leaf images; Output: Predictions indicating whether the leaf is healthy or infected with powdery mildew.
+
+9. **Performance Goals:**
+- The project aims for a minimum accuracy of 97%, although the model has been trained to achieve even higher accuracy.
+
+10. **Client Benefits:**
+- By implementing the ML solution, the client can ensure the quality of their product and streamline their operations by automating the detection of powdery mildew, thus reducing manual efforts.
 
 <br>
 
