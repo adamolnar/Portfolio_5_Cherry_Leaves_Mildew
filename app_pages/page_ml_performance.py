@@ -58,6 +58,35 @@ def page_ml_performance_metrics():
     """
     st.markdown(f"<div style='background-color: #e6f7ff; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
 
+    st.write("### Classification Report")
+    labels_distribution = plt.imread("outputs/v1/classification_report.png")
+    st.image(labels_distribution, caption='')
+    explanation_text = """
+    
+    """
+    st.markdown(f"<div style='background-color: #e6f7ff; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.write("---")
+
+    st.write("### Confusion Matrix")
+    labels_distribution = plt.imread("outputs/v1/confusion_matrix.png")
+    st.image(labels_distribution, caption='')
+    explanation_text = """
+    
+    """
+    st.markdown(f"<div style='background-color: #e6f7ff; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.write("---")
+
+    st.write("### ROC Curve")
+    labels_distribution = plt.imread("outputs/v1/roc_curve.png")
+    st.image(labels_distribution, caption='')
+    explanation_text = """
+    
+    """
+    st.markdown(f"<div style='background-color: #e6f7ff; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.write("---")
+
+
+
 def main():
     st.title("ML Performance")
     page_ml_performance_metrics()
