@@ -39,6 +39,18 @@ def page_ml_performance_metrics():
     st.write("---")
 
     st.write("### Model History")
+
+    explanation_text = """
+    The graph illustrates the learning cycle of the ML model through two plots showcasing accuracy and loss metrics during training. 
+    Analysis of these plots suggests a normal learning curve, indicating that the model neither suffers from overfitting nor underfitting. 
+    This conclusion is drawn from observing a balance between the model's ability to generalize well to unseen data and its capacity to learn from the training data effectively. 
+    The accuracy plot demonstrates a gradual increase over epochs, suggesting the model's improvement in correctly predicting outcomes. 
+    Concurrently, the loss plot exhibits a steady decline, indicating diminishing errors as the model learns. 
+    Overall, these trends suggest a healthy training process where the model achieves a desirable balance between accuracy and generalization.
+    """
+    st.markdown(f"<div style='background-color: #e6f7ff; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.write("---")
+
     col1, col2 = st.columns(2)
     with col1: 
         model_acc = plt.imread(f"outputs/{version}/model_training_acc.png")
@@ -46,10 +58,7 @@ def page_ml_performance_metrics():
     with col2:
         model_loss = plt.imread(f"outputs/{version}/model_training_losses.png")
         st.image(model_loss, caption='Model Training Losses')
-    explanation_text = """
-    A model history plot visually illustrates the performance of a machine learning model throughout the training and validation phases. It consists of two curves: one for the training dataset (typically shown in blue) and another for the validation dataset (often depicted in orange). The y-axis represents the chosen performance metric, such as accuracy or loss, while the x-axis indicates the number of training epochs. Effective interpretation of these plots enables practitioners to assess model learning dynamics, identify potential overfitting, and optimize model training strategies.    """
-    st.markdown(f"<div style='background-color: #e6f7ff; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
-    st.write("---")
+    
 
     st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))

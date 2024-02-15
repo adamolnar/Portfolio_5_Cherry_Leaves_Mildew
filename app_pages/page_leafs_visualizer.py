@@ -14,9 +14,10 @@ def main():
 
 def page_cells_visualizer_body():
     st.write("### Leaves Visualizer")
-    st.info(
-        "* The client is interested to have a study to visually differentiate "
-        "a healthy and powdery_mildew leaves."
+    st.success(
+        " The purpose of this page is to visually illustrate "
+        " the disparities between a **healthy** cherry leaf and one afflicted with **powdery mildew**. "
+        
     )
     
     version = 'v1'
@@ -25,9 +26,11 @@ def page_cells_visualizer_body():
         avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
         st.warning(
-            "* We notice the average and variability images didn't show "
-            "patterns where we could intuitively differentiate one to another. "
-            "However, a small difference in color pigment of the average images is seen for both labels"
+            "A noticeable visual contrast in the consistency of coloring is evident:"
+            "Infected leaves typically exhibit more white blotches on their surface compared to the predominantly greenish,"
+            "uniform coloring seen in healthy leaves."
+            "However, upon examining the average and variability images, no distinct patterns emerged"
+            "that could easily distinguish between infected and healthy leaves."
         )
 
         st.image(avg_powdery_mildew, caption='Powdery Mildew Leaf - Average and Variability')
@@ -38,8 +41,9 @@ def page_cells_visualizer_body():
         diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
         st.warning(
-            "* We notice this study didn't show "
-            "patterns where we could intuitively differentiate one to another."
+            "We recognize a similar trend here, with healthy leaves displaying a clearer, green surface,"
+            "while infected leaves exhibit more white coloring."
+            "However, comparing both types of leaves remains challenging."
         )
         st.image(diff_between_avgs, caption='Difference between average images')
 
@@ -47,10 +51,11 @@ def page_cells_visualizer_body():
         diff_between_avgs = plt.imread("outputs/v1/hsv_comparison.png")
 
         st.warning(
-            "This section provides a comprehensive comparison between powdery mildew and healthy leaves using HSV representations. "
-            "The HSV color space decomposes each pixel in an image into its Hue, Saturation, and Value components, offering a more intuitive understanding of color variations and patterns."
-            "\nThe purpose of this analysis is to leverage the HSV color space to identify subtle differences in color characteristics between powdery mildew and healthy leaves. "
-            "By examining the Hue, Saturation, and Value components separately, users can gain insights into the unique color profiles associated with each leaf condition."
+            "This visualization compares powdery mildew and healthy leaves using the HSV color space, "
+            "which breaks down each pixel into its Hue, Saturation, and Value components. "
+            "By analyzing these components separately, subtle differences in color characteristics between the two conditions can be identified, "
+            "with fungal-affected tissue typically highlighted in bright red color and healthy tissue appearing in brownish hues, "
+            "providing insights into the distinct color profiles associated with each leaf condition."
         )
         st.image(diff_between_avgs, caption='Difference between average images')
 
@@ -60,12 +65,19 @@ def page_cells_visualizer_body():
         st.warning(
             " Grayscale images contain only shades of gray, eliminating color complexity. This simplification can facilitate certain image processing operations and analysis tasks. "
             " In some cases, converting images to grayscale can enhance contrast and reveal details that may be less visible in color images."
-            " Converting images to grayscale before further analysis or processing might help simplify the task and focus on relevant features related to leaf health or disease detection."
+            " Contrast between white/powdery mildew marks and grey - representing the healthy part of the leaf, is shown in greyscale: "
+            " This approach likely enhances the visibility of the mildew marks against the healthy leaf tissue. "
         )
         st.image(diff_between_avgs, caption='Difference between average images')
 
     if st.checkbox("Image Montage"): 
-        st.write("* To refresh the montage, click on 'Create Montage' button")
+
+        st.warning(
+            " The montage aids in visually distinguishing between a healthy leaf and an infected one. "
+            " The infected leaf typically displays white, powdery spots or patches on its upper surface."
+        )
+
+        st.write("* To refresh the montage, click on **'Create Montage'** button")
         my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
 

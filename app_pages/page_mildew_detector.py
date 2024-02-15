@@ -17,9 +17,9 @@ def download_dataframe_as_csv(dataframe):
 
 def main():
     st.title("Mildew Detector")
-    st.info("The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.")
+    st.success("The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.")
 
-    st.write("You can download a set of healthy and powdery mildew leaves for live prediction. You can download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
+    st.warning("You can download a set of healthy and powdery mildew leaves for live prediction. You can download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
     st.write("---")
 
     images_buffer = st.file_uploader('Upload a cherry leaf image. You may select more than one.', type=['jpeg', 'jpg'], accept_multiple_files=True)
@@ -67,7 +67,7 @@ def main():
             st.markdown("---")
 
         if not df_report.empty:
-            st.success("Analysis Report")
+            st.info("Analysis Report")
             st.dataframe(df_report)
             st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
 
