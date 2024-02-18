@@ -3,3 +3,4 @@ inputs/cherry_leaves_dataset/cherry-leaves/train
 inputs/cherry_leaves_dataset/cherry-leaves/validation
 jupyter_notebooks
 README.md
+static/images

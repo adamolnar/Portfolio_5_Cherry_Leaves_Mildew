@@ -10,7 +10,7 @@ from app_pages.page_project_summary import main as project_summary
 # Set web browser title and favicon as the first Streamlit command
 st.set_page_config(
     page_title="Cherry Leaf Mildew Detector",
-    page_icon="static/images/cherry-leaf.png"  # You can use emoji as the favicon, or provide the path to your favicon.ico file
+    page_icon="static/cherry-leaf.png"  # You can use emoji as the favicon, or provide the path to your favicon.ico file
 )
 
 # Define app pages
