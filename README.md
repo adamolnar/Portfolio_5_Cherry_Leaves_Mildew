@@ -8,11 +8,11 @@
 
 - [Project Overview](#project-overview)
 - [CRISP-DM](#crisp-dm)
-- [Dataset Content](#dataset-content)
 - [Business Requirements](#business-requirements)
 - [Hypothesis](#hypothesis)
 - [The rationale to map the business requirements to the Data Visualisations and ML tasks](#ml-tasks)
 - [ML Business Case](#ml-business-case)
+- [Dataset Content](#dataset-content)
 - [Dashboard Design](#dashboard-design)
 - [Manual Testing](#manual-testing)
 - [Unfixed Bugs](#unfixed-bugs)
@@ -55,42 +55,6 @@ By following the CRISP-DM methodology, organizations can effectively manage and 
 
 ![CRISP-DM Icon](https://upload.wikimedia.org/wikipedia/commons/b/b9/CRISP-DM_Process_Diagram.png)
 </details>
-
-<br>
-
-## <div style="background-color:grey" id="dataset-content">DATASET CONTENT</div>
-
---- 
-
-**Dataset**: [Cherry Leaf Dataset on Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
-
-The dataset for the Mildew Detection in Cherry Leaves project consists of a collection of cherry leaf images, each labeled to indicate whether the leaf is healthy or affected by powdery mildew. Here are the key details regarding the dataset:
-
-- **Number of Samples**: The dataset comprises 4208 curated photographs featuring individual cherry leaves set against a neutral backdrop. 
-
-- **Data Format**: The images are typically in common image formats such as JPEG or PNG.
-
-- **Labeling**: Each image in the dataset is labeled with one of two classes:
-  - **Healthy**: Cherry leaves that are free from powdery mildew.
-  - **Powdery Mildew**: Cherry leaves that show signs of powdery mildew infection.
-
-- **Data Variability**: The dataset includes images of cherry leaves with varying degrees of powdery mildew infection. This variability is essential for training a robust model.
-
-- **Data Collection**: The images were gathered and categorized by Farmy & Foods Company, operating under a confidential non-disclosure agreement (NDA).
-
-- **Data Distribution**: The dataset is divided into training, validation, and test sets for machine learning purposes.
-
-- **Additional Information**: The dataset originally consists of images sized at 256 pixels × 256 pixels. However, for practicality and to meet project requirements, these images have been reshaped to dimensions like 50 × 50. This resizing is essential for managing the model's file size and ensuring that it aligns with the project's specifications effectively.
-
-### Image Samples
-
- **Healthy Leaves** 
-
-![Healthy Cherry Leaf 1](static/images/healthy_leaf.jpg) ![Healthy Cherry Leaf 2](static/images/healthy_leaf_2.jpg) ![Healthy Cherry Leaf 3](static/images/healthy_leaf_3.jpg)
-
-**Powdery Mildew Infected Leaves**
-
-![Powdery Mildew Cherry Leaf 1](static/images/powdery_mildew_1.jpg) ![Powdery Mildew Cherry Leaf 2](static/images/powdery_mildew_2.jpg) ![Powdery Mildew Cherry Leaf 3](static/images/powdery_mildew_3.jpg)
 
 <br>
 
@@ -219,6 +183,44 @@ If the dataset demonstrates balance, extensive cleaning will be unnecessary, ena
 
 <br>
 
+
+## <div style="background-color:grey" id="dataset-content">DATASET CONTENT</div>
+
+--- 
+
+**Dataset**: [Cherry Leaf Dataset on Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
+
+The dataset for the Mildew Detection in Cherry Leaves project consists of a collection of cherry leaf images, each labeled to indicate whether the leaf is healthy or affected by powdery mildew. Here are the key details regarding the dataset:
+
+- **Number of Samples**: The dataset comprises 4208 curated photographs featuring individual cherry leaves set against a neutral backdrop. 
+
+- **Data Format**: The images are typically in common image formats such as JPEG or PNG.
+
+- **Labeling**: Each image in the dataset is labeled with one of two classes:
+  - **Healthy**: Cherry leaves that are free from powdery mildew.
+  - **Powdery Mildew**: Cherry leaves that show signs of powdery mildew infection.
+
+- **Data Variability**: The dataset includes images of cherry leaves with varying degrees of powdery mildew infection. This variability is essential for training a robust model.
+
+- **Data Collection**: The images were gathered and categorized by Farmy & Foods Company, operating under a confidential non-disclosure agreement (NDA).
+
+- **Data Distribution**: The dataset is divided into training, validation, and test sets for machine learning purposes.
+
+- **Additional Information**: The dataset originally consists of images sized at 256 pixels × 256 pixels. However, for practicality and to meet project requirements, these images have been reshaped to dimensions like 50 × 50. This resizing is essential for managing the model's file size and ensuring that it aligns with the project's specifications effectively.
+
+### Image Samples
+
+ **Healthy Leaves** 
+
+![Healthy Cherry Leaf 1](static/images/healthy_leaf.jpg) ![Healthy Cherry Leaf 2](static/images/healthy_leaf_2.jpg) ![Healthy Cherry Leaf 3](static/images/healthy_leaf_3.jpg)
+
+**Powdery Mildew Infected Leaves**
+
+![Powdery Mildew Cherry Leaf 1](static/images/powdery_mildew_1.jpg) ![Powdery Mildew Cherry Leaf 2](static/images/powdery_mildew_2.jpg) ![Powdery Mildew Cherry Leaf 3](static/images/powdery_mildew_3.jpg)
+
+<br>
+
+
 ## <div style="background-color:grey" id="dashboard-design">DASHBOARD DESIGN</div>
 
 --- 
@@ -245,6 +247,12 @@ The "Project Summary" page provides a comprehensive overview of the Cherry Leaf 
 
 ### 3. **Cherry Leaf Visualizer**: 
 The "Data Visualization" page provides users with interactive tools to visually explore various aspects of the cherry leaf dataset. Its primary purpose is to facilitate a deeper understanding of the characteristics that differentiate healthy cherry leaves from those infected with powdery mildew.
+
+<details>
+<summary>CHERRY LEAF VISUALIZER PAGE</summary>
+
+![Cherry Leaf Visualizer](static/images/visualizer.png)
+</details>
 
 Key functionalities of the page include:
 
@@ -288,18 +296,12 @@ Key functionalities of the page include:
       <details>
       <summary>IMAGE MONTAGE</summary>
 
-      ![Image Montage Screenshot](static/images/visualizer_5.png)
+      ![Image Montage Screenshot](static/images/vusializer_5.png)
       </details>
 
 - **Dynamic Updates:** The page dynamically updates based on user interactions, allowing users to explore different visualization options and adjust parameters as needed.
 
 Overall, the "Data Visualization" page serves as a valuable tool for users to gain insights into the characteristics of cherry leaves affected by powdery mildew and aids in the development of strategies for disease detection and management.
-
-<details>
-<summary>CHERRY LEAF VISUALIZER PAGE</summary>
-
-![Cherry Leaf Visualizer](static/images/visualizer.png)
-</details>
 
 ### 4. **Mildew Detection**: 
 The "Mildew Detector" application serves the purpose of predicting whether a cherry leaf is healthy or contains powdery mildew, a common fungal disease affecting cherry trees. Users can upload cherry leaf images, and the application provides predictions along with confidence scores. The predictions are based on a machine learning model trained on a dataset of healthy and powdery mildew-affected cherry leaves.
@@ -327,22 +329,22 @@ The "Project Hypothesis and Validation" page provides a detailed overview of the
 
 - **Hypothesis 1**: Image Analysis for Powdery Mildew Identification: This section presents the hypothesis that the presence of powdery mildew on leaves can be accurately identified through image analysis. It outlines various validation methods, including image montage analysis, average image comparison, variability, average difference images, grayscale visualization, and HSV color space conversion.
 
+  <details>
+  <summary>PROJECT HYPHOTEHESIS 1</summary>
+
+  ![Project Hypothesis 1 Screenshot](static/images/hyphotesis_1.png)
+  </details>
+
 - **Hypothesis 2**: Machine Learning for Cherry Leaf Health Prediction: Here, the hypothesis is that machine learning can predict if a cherry leaf is healthy or contains powdery mildew based on leaf images. The validation methods involve training a machine learning model using a dataset of labeled leaf images and validating it against real-world samples.
 Dashboard Development for Instant Health Assessment: This section discusses the hypothesis that a user-friendly dashboard can be developed to provide instant cherry leaf health assessments based on uploaded images. The validation method includes the development of a dashboard for instant health assessments.
 
+  <details>
+  <summary>PROJECT HYPHOTEHESIS 2</summary>
+
+  ![Project Hypothesis 2 Screenshot](static/images/hyphotesis_2.png)
+  </details>
+
 Each hypothesis is accompanied by its respective validation methods, providing insights into how the hypotheses were tested and evaluated. Finally, the conclusions drawn from the observations and methods are summarized, highlighting the project's findings and implications.
-
-<details>
-<summary>PROJECT HYPHOTEHESIS 1 PAGE </summary>
-
-![Project Hypothesis 1 Screenshot](static/images/hyphotesis_1.png)
-</details>
-
-<details>
-<summary>PROJECT HYPHOTEHESIS 2 PAGE </summary>
-
-![Project Hypothesis 2 Screenshot](static/images/hyphotesis_2.png)
-</details>
 
 ### 6. **ML Performance Metrics**:
 
@@ -406,9 +408,6 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 --- 
 
-<details>
-<summary>MANUAL TESTING</summary>
-
 | Test Case | Description                                     | Expected Result                       | Pass/Fail |
 |-----------|-------------------------------------------------|---------------------------------------|-----------|
 | Home Page Navigation       | Verify that users can navigate through different sections of the app from the home page.              | Users can navigate without errors       | ✅        |
@@ -424,7 +423,6 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 | Cherry Leaf Visualizer Page | Navigate to the Cherry Leaf Visualizer page. | Page loads without errors             | ✅        |
 | Upload Dataset for ML | Upload a dataset for machine learning analysis. | Dataset is uploaded successfully      | ✅        |
 | ML Performance Metrics Page | Access the ML Performance Metrics page. | Page displays relevant performance metrics    | ✅        |
-</details>
 
 <br>
 
