@@ -26,6 +26,7 @@ oauthlib
 opt-einsum
 pandas
 pkgutil_resolve_name
+plotly
 protobuf
 pyarrow
 pyasn1
