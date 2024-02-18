@@ -86,7 +86,7 @@ def page_cells_visualizer_body():
 
         if st.button("Create Montage"):
             with st.spinner("Loading montage..."):
-                image_montage(dir_path=my_data_dir + '/validation',
+                image_montage(dir_path='inputs/cherry_leaves_dataset/cherry-leaves/validation',
                               labels_to_display=labels_to_display,
                               nrows=4, ncols=3, figsize=(20, 30))  # Adjusted figsize for bigger images
         st.write("---")
