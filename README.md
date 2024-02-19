@@ -367,7 +367,7 @@ Each hypothesis is accompanied by its respective validation methods, providing i
   ![Model History Screenshot](static/images/ml_3.png)
   </details>
 
-* Upon evaluation on the **Test set**, the model showcased remarkable performance, with a reported loss value of 0.0457 and an accuracy score of 99.17%. These metrics underscore the model's strong predictive capabilities and robust generalization to new instances.
+* Upon evaluation on the **Test set**, the model showcased remarkable performance, with a reported loss value of 0.0664 and an accuracy score of 98.70%. These metrics underscore the model's strong predictive capabilities and robust generalization to new instances.
 
   <details>
   <summary>GENERALISED PERFORMANCE ON TEST SET</summary>
@@ -383,7 +383,7 @@ Each hypothesis is accompanied by its respective validation methods, providing i
   ![Classification Report Screenshot](static/images/ml_5.png)
   </details>
 
-* The **confusion matrix** provides a granular breakdown of the model's predictions, reaffirming its high accuracy (99%) and proficiency in making correct classifications.
+* The **confusion matrix** provides a granular breakdown of the model's predictions, reaffirming its high accuracy (98%) and proficiency in making correct classifications.
 
   <details>
   <summary>CONFUSION MATRIX</summary>
