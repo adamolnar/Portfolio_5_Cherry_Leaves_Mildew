@@ -1,9 +1,8 @@
 # Powdery Mildew Detection in Cherry Leaves
 
-<p align="center">
-  <img src="https://res.cloudinary.com/dmg7oqpgs/image/upload/w_100,h_100/v1708336075/cherry-leaf_g3zgat.png" alt="Cherry Leaf Logo">
-</p>
+---
 
+![Am I Resposive Screenshot](static/images/am_i_resposive.png)
 
 <br>
 
@@ -428,8 +427,7 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 --- 
 
-- ...
-
+All previously identified bugs were successfully resolved during the testing and deployment stages.
 
 <br>
 
@@ -533,9 +531,10 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 ### Project Inspiration
 - The idea for this project was inspired by [Mildew Detection in Cherry Leaves](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PA_PAGPPF+2021_Q4/courseware/bde016cdbd184cdeafd341a73807e138/bd2104eb84de4e48a9df6f685773cbf2/).
+- The design and structure of this project draw inspiration from [Mildew-detection-cherry-leaves_milestonePP5](https://github.com/ssreelakshmi88/mildew-detection-cherry-leaves_milestonePP5?tab=readme-ov-file). I customized and adapted the layout to suit the unique requirements of this project.
 
 ### Project Template
-- The project base template is sourced from the [milestone-project-mildew-detection-in-cherry-leaves](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) Git repository.
+- The project base template is sourced from the [Milestone-project-mildew-detection-in-cherry-leaves](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) Git repository.
 
 ### Dataset Source
 - The dataset used in this project was obtained from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).
@@ -544,9 +543,8 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 - The project content and structure were influenced by the Code Institute Walkthrough Project [Malaria Detector](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/).
 - Troubleshooting 'Compiled Slug Size is too Large' Error During Django App Deployment on Heroku
 [StackOverflow](https://stackoverflow.com/questions/66950764/when-i-deployed-django-app-in-heroku-at-that-time-compiled-slug-size-is-too-lar)
+- Learning TensorFlow for Binary Classification Tutorial Reference [FreeCodeCamp](https://www.freecodecamp.org/news/binary-classification-made-simple-with-tensorflow/).
 
 ### Favicon Image
 - The project favicon image was sourced from [Freepik](https://www.freepik.com/icon/leaf_892917).
 
-### Acknowledgements
-- Thank the people that provided support throughout this project.
