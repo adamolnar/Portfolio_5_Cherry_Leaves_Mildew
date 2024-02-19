@@ -78,8 +78,7 @@ def page_cells_visualizer_body():
         )
 
         st.write("* To refresh the montage, click on **'Create Montage'** button")
-        my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
-        labels = os.listdir(my_data_dir + '/validation')
+        labels = os.listdir('inputs/cherry_leaves_dataset/cherry-leaves/validation')
 
         # Allow for the selection of multiple labels
         labels_to_display = st.multiselect(label="Select labels", options=labels, default=labels[:2])

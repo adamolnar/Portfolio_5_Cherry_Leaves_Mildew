@@ -43,6 +43,7 @@ seaborn
 streamlit
 tensorboard
 tensorboard-data-server
+tensorflow
 tensorflow-cpu
 tensorflow-estimator
 tensorflow-io-gcs-filesystem

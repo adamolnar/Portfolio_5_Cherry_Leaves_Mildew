@@ -17,9 +17,9 @@ def main():
         f"* The dataset is sourced from [KAGGLE](https://www.kaggle.com/codeinstitute/cherry-leaves).\n"
         f"* The project dataset includes 4208 of images of cherry leaves, both healthy and affected by powdery mildew.\n"
         f"* The images dataset has been split evenly with\n"
-        f"* healthy cherry leaves and leaves with powdery Mildew.\n"
+        f"  healthy cherry leaves and leaves with powdery Mildew.\n"
         f"* These images serve as the foundation for training a machine learning model to detect the presence of mildew.\n"
-        f"* For additional details, please refer to the project's [README file](https://github.com/adamolnar/Porfolio_5/blob/main/README.md).\n"
+        f"* For additional details, please refer to the project's [README file](https://github.com/adamolnar/Portfolio_5_Cherry_Leaves_Mildew).\n"
     )
 
     st.info(

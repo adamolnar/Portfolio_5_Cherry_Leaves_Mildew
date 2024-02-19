@@ -1,6 +1,9 @@
-# Powdery Mildew Detection in Cherry Leaves Project
+# Powdery Mildew Detection in Cherry Leaves
 
-...
+<p align="center">
+  <img src="https://res.cloudinary.com/dmg7oqpgs/image/upload/w_100,h_100/v1708336075/cherry-leaf_g3zgat.png" alt="Cherry Leaf Logo">
+</p>
+
 
 <br>
 
@@ -30,6 +33,8 @@
 --- 
 
 This project aims to develop a solution for differentiating healthy cherry leaves from those affected by powdery mildew using image analysis. Additionally, it involves building a predictive model to automatically classify cherry leaves as healthy or containing powdery mildew.
+
+Access the Live Version of the Project [Here](https://powdery-mildew-app-9f8928c90394.herokuapp.com/).
 
 <br>
 
@@ -90,9 +95,6 @@ The project addresses the following business requirements:
   - Image montage analysis and average image comparison provided valuable insights into the visual differences between healthy and affected leaves.
   - Variability and average difference images highlighted contrast variations, aiding in the identification process.
   - Grayscale visualization and HSV color space conversion provided additional dimensions for analyzing texture, intensity, color variations, and patterns, enhancing the accuracy of powdery mildew identification.
-
-  **To visually explore features of both infected and healthy leaves, please visit the [Cherry Leaf Visualizer page]().**
-
  
 ### Hypothesis 2: Machine Learning for Cherry Leaf Health Prediction
 - **Hypothesis:**
@@ -106,8 +108,6 @@ The project addresses the following business requirements:
   - Further experimentation and validation are ongoing to refine the method and ensure its reliability in real-world scenarios.
   - The findings suggest that automated image analysis can be a valuable tool in agricultural disease detection and management.
   - Ongoing development and refinement of the dashboard will enhance its usability and effectiveness in providing instant health assessments.
-
-  **For an in-depth analysis of the model's performance metrics, please proceed to the [ML Performance Metrics page]() and [Powdery Mildew Detection page]().**
 
 <br>
 
@@ -542,6 +542,8 @@ Each hypothesis is accompanied by its respective validation methods, providing i
 
 ### Project Content Reference
 - The project content and structure were influenced by the Code Institute Walkthrough Project [Malaria Detector](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/).
+- Troubleshooting 'Compiled Slug Size is too Large' Error During Django App Deployment on Heroku
+[StackOverflow](https://stackoverflow.com/questions/66950764/when-i-deployed-django-app-in-heroku-at-that-time-compiled-slug-size-is-too-lar)
 
 ### Favicon Image
 - The project favicon image was sourced from [Freepik](https://www.freepik.com/icon/leaf_892917).
