@@ -544,7 +544,12 @@ All previously identified bugs were successfully resolved during the testing and
 - Troubleshooting 'Compiled Slug Size is too Large' Error During Django App Deployment on Heroku
 [StackOverflow](https://stackoverflow.com/questions/66950764/when-i-deployed-django-app-in-heroku-at-that-time-compiled-slug-size-is-too-lar)
 - Learning TensorFlow for Binary Classification Tutorial Reference [FreeCodeCamp](https://www.freecodecamp.org/news/binary-classification-made-simple-with-tensorflow/).
+- Learning Classification Report [Yellowbrick](https://www.scikit-yb.org/en/latest/api/classifier/classification_report.html), [StackOverflow](https://stackoverflow.com/questions/28200786/how-to-plot-scikit-learn-classification-report).
+- Lerning ROC Curve [Medium](https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5), [GeeksForGeeks](https://www.geeksforgeeks.org/auc-roc-curve/), [Madium](https://yassineelkhal.medium.com/confusion-matrix-auc-and-roc-curve-and-gini-clearly-explained-221788618eb2), []().
 
 ### Favicon Image
 - The project favicon image was sourced from [Freepik](https://www.freepik.com/icon/leaf_892917).
+
+### Acknowledgments
+- I extend my heartfelt appreciation to my mentor, Precious Ijege, whose guidance and support significantly contributed to the success of this project.
 

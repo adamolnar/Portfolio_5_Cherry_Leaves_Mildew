@@ -30,7 +30,7 @@ def page_ml_performance_metrics():
     Such balance is crucial for the model to learn effectively without bias towards any particular class,
     fostering equitable distinction between the two classes.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(explanation_text)
     st.write("---")
 
     labels_distribution = plt.imread(f"outputs/{version}/pie_chart.png")
@@ -61,7 +61,7 @@ def page_ml_performance_metrics():
     Concurrently, the loss plot exhibits a steady decline, indicating diminishing errors as the model learns. 
     Overall, these trends suggest a healthy training process where the model achieves a desirable balance between accuracy and generalization.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(explanation_text)
     st.write("---")
     
 
@@ -75,7 +75,7 @@ def page_ml_performance_metrics():
     The accuracy value of 0.9917 indicates that the model correctly classified approximately 99.17% of instances in the test dataset.
     These metrics suggest strong performance and robust generalization of the model to new, unseen data.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(explanation_text)
     st.write("---")
 
     st.write("### Classification Report")
@@ -92,7 +92,7 @@ def page_ml_performance_metrics():
     metrics provide consolidated performance evaluations across all classes,
     reaffirming the model's robust performance.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(explanation_text)
     st.write("---")
 
     st.write("### Confusion Matrix")
@@ -105,7 +105,7 @@ def page_ml_performance_metrics():
     The accuracy metric, at 99%, indicates the percentage of correct predictions made by the model.
     A high accuracy coupled with a low loss suggests the model is effectively making accurate predictions.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(explanation_text)
     st.write("---")
 
     st.write("### ROC Curve")
@@ -123,7 +123,7 @@ def page_ml_performance_metrics():
     This evaluation is crucial for understanding the model's effectiveness in distinguishing between
     classes and making informed decisions regarding its performance.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(explanation_text)
     st.write("---")
 
 
