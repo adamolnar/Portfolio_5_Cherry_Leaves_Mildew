@@ -41,7 +41,7 @@ def page_ml_performance_metrics():
     The dataset underwent partitioning into Train, Validation, 
     and Test sets with respective ratios of 0.7, 0.1, and 0.2.
     """
-    st.markdown(f"<div style='background-color: #caccd1; padding: 10px; border-radius: 5px;'>{explanation_text}</div>", unsafe_allow_html=True)
+    st.info(fexplanation_text)
     st.write("---")
 
     st.write("### Model History")
